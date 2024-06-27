@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(Satoshi-Regular.ttf);
+}
+
+*{
+    font-family: Satoshi;
+}
+
+body {
+    max-width: 1920px;
+    margin: auto;
+    background: var(--bw-white, #fff);
+}
+/* navigation */
+.navContainer {
+    background-color: aliceblue;
+    height: 80px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    
+}
+.logoNav {
+    width: 15%;
+    /* border: 2px solid orange; */
+    display: flex;
+    justify-content: start;
+    color: var(--Primary-Primary, #f27229);
+    font-family: Satoshi;
+    font-size: 34.654px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 61.608px; /* 177.778% */
+    margin: auto;
+    margin-left: 20px;
+}
+.logoNav svg{
+    width: 41.525px;
+    height: 40.855px;
+    /* transform: rotate(70.881deg); */
+    flex-shrink: 0;
+    padding-bottom: 5px;
+    position: relative;
+    padding-left: 60px;
+    margin-left: -20px;
+    margin-top: -10px;
+    z-index: 2;
+}
+.logoNav p{
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+}
+.navMenu {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Signin SignUp buttons */
+.navLogin {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid orange; */
+}
+.signInButton {
+    width: 128px;
+    height: 60px;
+    border-radius: 30px;
+    /* padding: 10px; */
+    margin-right: -30px;
+    background-color: #F27229;
+    border: 2px solid #F27229;
+    color: white;
+    /* box-shadow: 2px 3px 6px #888888; */
+    position: absolute;
+    z-index: 2;
+}
+
+.signUpButton {
+    width: 128px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 130px;
+    background-color: white;
+    color: #F27229;
+    position: relative;
+    border: 2px solid #F27229;
+    color: #F27229;
+    /* box-shadow: 2px 5px 8px #888888; */
+    position: relative;
+    z-index: 3;
+}
+.btnLink{
+    width: 21px;
+    height: 23.774px;
+    border: 0 solid;
+    background-color: #F27229;
+    position: absolute;
+    z-index: 1;
+    margin-left:125px;
+    margin-top: 19px;
+}
