@@ -1,3 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 @font-face {
     font-family: Satoshi;
     src: url(Satoshi-Regular.ttf);
@@ -12,13 +19,73 @@ body {
     margin: auto;
     background: var(--bw-white, #fff);
 }
+
+.primaryTextColor{
+    color: #F27229;
+}
+
+
+/* circle text */
+.circle{
+    position: relative;
+    /* width: 100px;
+    height: 100px;
+    background-color: #F27229; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.circleText{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 9.309px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #141414;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.circleText span{
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 50px;
+}
+/* circle with paly button  */
+.playCircle{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+.imgCircle{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    z-index: 1;
+    margin-right: 27px;
+}
+.imgPlay{
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+
+
+
 /* navigation */
 .navContainer {
-    background-color: aliceblue;
+    
     height: 80px;
     max-width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: aliceblue;
     /* border: 2px solid red; */
     display: flex;
     flex-direction: row;
@@ -33,7 +100,6 @@ body {
 }
 .logoNav {
     width: 15%;
-    /* border: 2px solid orange; */
     display: flex;
     justify-content: start;
     color: var(--Primary-Primary, #f27229);
@@ -44,6 +110,7 @@ body {
     line-height: 61.608px; /* 177.778% */
     margin: auto;
     margin-left: 20px;
+    /* border: 2px solid orange; */
 }
 .logoNav svg{
     width: 41.525px;
@@ -62,10 +129,29 @@ body {
     position: absolute;
     margin: auto;
 }
+
+/* Nav Menu */
 .navMenu {
     width: 65%;
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.navMenu ul{
+    list-style-type: none;
+}
+
+.navMenu ul li{
+    display: inline;
+    text-shadow: 2px 2px 8px #888888;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+}
+.btnActive{
+    color: #F27229;
 }
 
 
@@ -76,6 +162,8 @@ body {
     display: flex;
     flex-direction: row;
     /* border: 2px solid orange; */
+    justify-content: end;
+    padding-right: 10px;
 }
 .signInButton {
     width: 128px;
@@ -102,6 +190,7 @@ body {
     border: 2px solid #F27229;
     color: #F27229;
     /* box-shadow: 2px 5px 8px #888888; */
+
     position: relative;
     z-index: 3;
 }
@@ -110,8 +199,121 @@ body {
     height: 23.774px;
     border: 0 solid;
     background-color: #F27229;
+
     position: absolute;
     z-index: 1;
+    
     margin-left:125px;
     margin-top: 19px;
+}
+
+
+/* Section banner */
+
+/* Banner Section part 1 */
+.banner{
+    padding: 10px;
+}
+.bannerPart1{
+    display: flex;
+}
+
+/* Banner Part 1 Left */
+.bannerPart1Left{
+    width: 65%;
+    
+}
+
+/* Heading 1 */
+.heading1{
+    display: flex;
+    gap: 8%;
+}
+.titleHeading{
+    font-family: "Outfit", sans-serif;
+    font-size: 110px;
+    /* font-style: normal; */
+    font-weight: 600;
+    line-height: 86px;
+}
+
+/* Heading 2 */
+.heading2{
+    display: flex;
+    justify-content: start;
+}
+.heading2 img{
+    width: 308px;
+    height: 99px;
+    /* flex-shrink: 0; */
+    /* margin: auto; */
+
+}
+.heading2Text{
+    font-family: "Outfit", sans-serif;
+    font-size: 80px;
+    /* font-style: normal; */
+    font-weight: 600;
+    line-height: 90px; /* 100% */
+    margin: auto;
+}
+
+
+
+/* Banner Part 1 Right */
+.bannerPart1Right{
+    width: 30%;
+    margin-top: 90px;
+}
+.bannerPart1Right p{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.bannerPart1Right div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.bannerPart1Right div p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+
+    margin: auto;
+}
+.bannerPart1Right div p span{
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; 
+}
+
+.bannerPart1Right div div img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.socialImg1{
+    position: relative;
+    z-index: 1;
+}
+.socialImg2{
+    position: absolute;
+    z-index: 2;
+    margin-left: 45px;
+}
+.socialImg3{
+    position: absolute;
+    z-index: 3;
+    margin-left: 90px;
+}
+
+.bannerPart2{
+    
 }
