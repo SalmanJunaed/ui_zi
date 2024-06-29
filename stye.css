@@ -47,7 +47,17 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
+
+    animation: anim 10s linear infinite;
 }
+/* @keyframes anim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
 .circleText span{
     position: absolute;
     left: 50%;
