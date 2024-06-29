@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+    <link rel="stylesheet" href="styeCircle.css">
+</head>
+
+<body>
+    <div class="cycleContainer">
+        <div class="cycle">
+            <div class="logo"></div>
+            <div class="text">
+                <p>This is a Logo With Cycle Text UX/UI Design -</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const text = document.querySelector('.text p');
+        text.innerHTML = text.innerText.split('').map(
+            (char, i) =>
+                `<span style="transform:rotate(${i * 8.0}deg)">${char}</span>`
+        ).join('');
+    </script>
+</body>
+
+</html>
